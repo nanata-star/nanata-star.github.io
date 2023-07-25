@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @charset "utf-8";
+
+    html {
+      box-sizing: border-box;
+      -webkit-text-size-adjust: 100%
+    }
+
+    *,
+    :after,
+    :before {
+      background-repeat: no-repeat;
+      box-sizing: inherit
+    }
+
+    :after,
+    :before {
+      text-decoration: inherit;
+      vertical-align: inherit
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+
+    hr {
+      overflow: visible
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+      display: block
+    }
+
+    summary {
+      display: list-item
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    [hidden],
+    template {
+      display: none
+    }
+
+    abbr[title] {
+      border-bottom: 1px dotted;
+      text-decoration: none
+    }
+
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects
+    }
+
+    a:active,
+    a:hover {
+      outline-width: 0
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    dfn {
+      font-style: italic
+    }
+
+    mark {
+      background-color: #ff0;
+      color: #000
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    input {
+      border-radius: 0
+    }
+
+    [role=button],
+    [type=button],
+    [type=reset],
+    [type=submit],
+    button {
+      cursor: pointer
+    }
+
+    [disabled] {
+      cursor: default
+    }
+
+    [type=number] {
+      width: auto
+    }
+
+    [type=search][type=search]::-webkit-search-cancel-button,
+    [type=search]::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    textarea {
+      overflow: auto;
+      resize: vertical
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font: inherit
+    }
+
+    optgroup {
+      font-weight: 700
+    }
+
+    button {
+      overflow: visible
+    }
+
+    [type=button]::-moz-focus-inner,
+    [type=reset]::-moz-focus-inner,
+    [type=submit]::-moz-focus-inner,
+    button::-moz-focus-inner {
+      border-style: 0;
+      padding: 0
+    }
+
+    [type=button]::-moz-focus-inner,
+    [type=reset]::-moz-focus-inner,
+    [type=submit]::-moz-focus-inner,
+    button:-moz-focusring {
+      outline: 1px dotted
+    }
+
+    [type=reset],
+    [type=submit],
+    button,
+    html [type=button]button,
+    select {
+      text-transform: none
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      background-color: transparent;
+      border-style: none;
+      color: inherit
+    }
+
+    select::-ms-expand {
+      display: none
+    }
+
+    select::-ms-value {
+      color: currentColor
+    }
+
+    legend {
+      border: 0;
+      color: inherit;
+      display: table;
+      max-width: 100%;
+      white-space: normal
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    [type=search]img {
+      border-style: none;
+      vertical-align: bottom
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    svg:not(:root) {
+      overflow: hidden
+    }
+
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block
+    }
+
+    @media screen {
+      [hidden~=screen] {
+        display: inherit
+      }
+
+      [hidden~=screen]:not(:active):not(:focus):not(:target) {
+        position: absolute !important;
+        clip: rect(0 0 0 0) !important
+      }
+    }
+
+    [aria-busy=true] {
+      cursor: progress
+    }
+
+    [aria-controls] {
+      cursor: pointer
+    }
+
+    [aria-disabled] {
+      cursor: default
+    }
+
+    ::-moz-selection {
+      background-color: #b3d4fc;
+      color: #000;
+      text-shadow: none
+    }
+
+    ::selection {
+      background-color: #b3d4fc;
+      color: #000;
+      text-shadow: none
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+
+    body {
+      background-color: #ddd;
+    }
+
+    /* ここ以下を母体cssにコピー */
+    .modal-content {
+      max-width: 960px;
+      margin: 60px auto 0;
+    }
+
+    .modal-inner {
+      padding: 2%;
+      background-color: white;
+    }
+
+    .modal-inner>h4 {
+      text-align: center;
+      /* フォントサイズは母体でremで指定 */
+    }
+
+    .mock-up {
+      margin-bottom: 30px;
+      height: 550px;
+    }
+
+    .mock-up>img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .detail-img {
+      width: 55%;
+    }
+
+    .detail-txt {
+      width: 43%;
+    }
+
+    .detail-txt>dl>dt {
+      font-weight: bold;
+      /* フォントサイズは母体でremで指定 */
+      background-color: pink;
+      /* 仮 */
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    .detail-txt>dl>dd {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .modal-close.btn {
+      display: block;
+      padding: 20px 80px;
+      margin: 40px auto 20px;
+      border: 1px solid #000;
+    }
+
+    .modal-close.btn:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    ここ以下を同名ファイルの.txtという拡張子に変えて保存！！
+    CSSは母体に記述
+  -->
+
+  <div class="modal-content">
+    <div class="modal-inner">
+      <h4>作品タイトル</h4>
+
+      <div class="mock-up">
+        <img src="/img/parallax06.jpg" alt="">
+      </div>
+
+      <div class="detail">
+        <!-- flex -->
+        <div class="detail-img">
+          <a href="/img/Harmonia-pc.png" target="_blank">
+            <img src="/img/Harmonia-pc.png" alt="">
+          </a>
+        </div>
+
+        <div class="detail-txt">
+          <dl>
+            <dt>コンセプト</dt>
+            <dd>詳細テキストテキスト</dd>
+            <dt>制作ツール</dt>
+            <dd>詳細</dd>
+            <dt>制作時間</dt>
+            <dd>＠＠時間</dd>
+            <dt>制作意図</dt>
+            <dd>こういうところに留意しました</dd>
+          </dl>
+        </div>
+      </div>
+
+      <button class="modal-close btn">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>

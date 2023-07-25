@@ -1,0 +1,39 @@
+
+  <!--
+    ここ以下を同名ファイルの.txtという拡張子に変えて保存！！
+    CSSは母体に記述
+  -->
+
+  <div class="modal-content">
+    <div class="modal-inner">
+	<div class="modal-close">×</div>
+      <h4>作品タイトル</h4>
+
+      <div class="mock-up">
+        <img src="/img/parallax02.jpg" alt="">
+      </div>
+
+      <div class="detail">
+        <!-- flex -->
+        <div class="detail-img">
+          <a href="/img/TechEdge.webp" target="_blank">
+            <img src="/img/TechEdge.webp" alt="">
+          </a>
+        </div>
+
+        <div class="detail-txt">
+          <dl>
+            <dt>コンセプト</dt>
+            <dd>詳細テキストテキスト</dd>
+            <dt>制作ツール</dt>
+            <dd>詳細</dd>
+            <dt>制作時間</dt>
+            <dd>＠＠時間</dd>
+            <dt>制作意図</dt>
+            <dd>こういうところに留意しました</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
