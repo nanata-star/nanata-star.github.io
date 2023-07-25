@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQueryによるレスポンシブテスト</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>ウィンドウ幅が指定なしの時は「赤」</p>
+  <p>ウィンドウが900px以下は「青」</p>
+  <div class="box"></div>
+  <div class="box"></div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+  $();
+  $(function(){
+    let windowWidth = $(window).width();
+
+      if( windowWidth > 800 ){
+        console.log('ok1');
+        $(this).css('background-color','blue');
+      } else if (windowWidth > 800){
+        console.log('ok2');
+      }
+    });
+
+</script>
+</body>
+</html>
