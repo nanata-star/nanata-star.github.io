@@ -1,0 +1,226 @@
+/* （共）全体 */
+@charset"utf-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap');
+
+	
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+p {
+	line-height: 1.65;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+/* （共）ヘッダー・ナビ */
+header> h1 {
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	letter-spacing: 0.3em;
+	font-size: 40px;
+	color:  #414637;
+font-family: 'Noto Serif JP', serif;
+
+}
+
+.g-nav {
+	display: flex;
+	width: 960px;
+	justify-content: center;
+}
+
+/* ヘッダー見本 
+.g-nav {
+	width:960px
+	height :50px;
+}
+
+.g-nav>ul { ←子セレクタ
+	display:flex;
+	width:960px;
+	margin :0 auto;
+}
+
+.g-nav li{
+	width: 20%;
+}
+
+.g-nav a {
+	display:block;
+	text-align: center;
+	color: white;
+	border-right: 1px solid white;
+}
+.g-nav:hover {
+	background-color:red;
+}
+
+
+*/
+
+
+.g-nav ul {
+	letter-spacing: 3px;
+	width: 20%;
+}
+
+.g-nav ul li a{
+	display: block;
+	padding: 25px 0;
+	background-color: #646A58;
+	color: #fff;
+	text-align: center;
+}
+
+.g-nav ul li a:hover {
+	background-color: #85bd7e;
+	transition: 0.6s;
+}
+
+/* トップメイン */
+.main_visual {
+	position: relative;
+}
+
+.copy {
+	position: absolute;
+	top: 15%;
+	left: 7%;
+	color: #fff;
+	font-family: serif;
+	letter-spacing: 0.25em;
+	font-size: 25px;
+
+}
+
+.main_text {
+	text-align: center;
+}
+
+.main_text>h2 {
+	margin-top: 80px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	color:  #414637;
+	font-family: 'Noto Serif JP', serif;
+	font-weight: 400;
+}
+
+.main_text>p {
+	color:  #414637;
+	font-family: serif;
+	width: 600px;
+	margin: 0 auto;
+	line-height: 2.5;
+}
+
+/* (共)季節メイン */
+main.page {
+	display: flex;
+}
+
+.page-img {
+	margin-top: 50px;
+}
+
+.page-txt  {
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
+.page-txt>h2 {
+	margin-bottom: 20px;
+	font-family: 'Noto Serif JP', serif;
+}
+
+.page-txt>p {
+	line-height: 2;
+	font-family: serif;
+}
+/* 春 */
+#spring .g-nav ul li a,#spring footer{
+	background-color: #1B813E;
+}
+
+#spring .g-nav ul li a:hover {
+	background-color: #44c270;
+	transition: 0.6s;
+}
+
+#spring .page-txt>h2 {
+	border-bottom: 2px solid #1B813E;
+}
+
+/* 夏 */
+#summer .g-nav ul li a,#summer footer{
+	background-color: #CB1B45;
+}
+
+#summer .g-nav ul li a:hover {
+	background-color: #ec6d8b;
+	transition: 0.6s;
+}
+
+#summer .page-txt>h2 {
+	border-bottom: 2px solid #CB1B45;
+}
+
+/* 秋 */
+#fall .g-nav ul li a,#fall footer{
+	background-color: #8D742A;
+}
+
+#fall .g-nav ul li a:hover {
+	background-color: #caa841;
+	transition: 0.6s;
+}
+
+#fall .page-txt>h2 {
+	border-bottom: 2px solid #8D742A;
+}
+
+/* 冬 */
+#winter .g-nav ul li a,#winter footer{
+	background-color: #254791;
+}
+
+#winter .g-nav ul li a:hover {
+	background-color: #4973ce;
+	transition: 0.6s;
+}
+
+#winter .page-txt>h2 {
+	border-bottom: 2px solid #254791;
+}
+
+
+
+
+/* （共）フッター */
+footer {
+	margin-top: 140px;
+	width:100%;
+	height: 100px;
+	background-color: #646A58;
+}
+footer>p {
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.2em;
+}
