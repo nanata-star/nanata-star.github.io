@@ -46,6 +46,19 @@ $(function(){
   });
 });
 
+// ハンバーガー
+$(function () {
+  $('.hamburger').on('click', function () {
+    console.log('ok');
+    $('.hm-nav').toggleClass('is-active');
+    $('.hamburger').toggleClass('is-active');
+  });
+
+  $(".hm-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".hamburger").removeClass('is-active');//ボタンの activeクラスを除去し
+    $(".hm-nav").removeClass('is-active');//ナビゲーションのクラスも除去
+  });
+});
 
 
 // ナビゲーション、フッターまで入ったら消える

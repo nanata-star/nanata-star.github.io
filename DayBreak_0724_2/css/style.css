@@ -61,7 +61,6 @@ width:40%;
 body共通
 ---------------------------- */
 #body {
-background: rgb(254,132,84);
 background: linear-gradient(180deg, rgba(254,132,84,1) 0%, rgba(64,52,97,1) 100%);
 letter-spacing: var(--letterspacing);
 }
@@ -77,6 +76,17 @@ letter-spacing: var(--letterspacing);
 	position: relative;
 	height: 100vh;
 }
+
+/* ハンバーガー */
+
+.hm-nav {
+	display: none;
+}
+
+.hm-wrap>.hamburger {
+	display: none;
+}
+
 
 #bg-video-area {
 	position: absolute;
@@ -437,6 +447,7 @@ Profileセクション
 
 .prf-img {
 	width: 48%;
+	margin-top: 60px;
 }
 
 .prf-detail {
@@ -477,7 +488,7 @@ Profileセクション
 	grid-template-rows: repeat(7, 1fr);
 	grid-auto-flow: column;
 	/* grid-auto-rows: 200px; */
-	gap:10px 10px;
+	gap:30px 10px;
 	margin-bottom: 70px;
 }
 
@@ -493,12 +504,12 @@ Profileセクション
 .skill-detail {
 	position: absolute;
 	z-index: -2;
-	top: 20px;
-	left: 60px;
+	top: 15px;
+	left: 55px;
 	width: 80%;
 	height: 86px;
-	padding: 2% 0 2% 10%;
-	background-image: url(./img/prf-bg.png);
+	padding: 2% 10px 2% 40px;
+	background-image: url(../img/prf-bg.png);
 	background-repeat: repeat;
 }
 

@@ -39,6 +39,58 @@ max-width:950px,footer-contentsのみ
 	}
 
 	/* ハンバーガー表示 */
+.hm-wrap {
+	position: relative;
+}
+
+.hm-wrap>.hamburger {
+ display: block;
+ margin: 0 0 0 auto;
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 500;
+}
+
+.hm-nav {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	right: 0%;
+	background-color: #403461da;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	z-index: 100;
+	transform: translateX(100%);
+	transition: .3s;
+}
+
+.hm-nav ul {
+	padding-top: 100px;
+}
+
+.hm-nav img {
+	width: 30vw;
+	margin-top: 10vh;
+}
+
+.hm-nav a {
+	display: inline-block;
+	margin: 0px 0 60px 0px;
+	font-size: var(--h4-fontSize);
+	color: var(--color4);
+	letter-spacing: var(--letterspacing);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 8px;
+}
+
+.hm-nav.is-active{
+	transform: translateX(0%);
+	transition: .3s;
+}
 
 	/* section,grid設定 */
 	.grid-3 {
@@ -118,12 +170,11 @@ max-width:950px,footer-contentsのみ
 }
 
 
-@media(max-width:414px) {
-	/* body共通 */
+@media(max-width:614px) {
+	/* 414body共通 */
 
 	/* ナビ非表示 */
 
-	/* ハンバーガー表示 */
 
 	/* section,grid設定 */
 	.section h2 {
@@ -160,6 +211,34 @@ max-width:950px,footer-contentsのみ
 
 	.section {
 		padding:30px 2% 60px;
+	}
+
+	.caption {
+		display: none;
+	}
+
+	/* web design */
+	.detail-txt.web-item-detail {
+		width: 85%;
+		margin: 30px auto;
+	}
+
+	/* graphic */
+	.modal-content.line .mock-up img {
+		width: 85%;
+	}
+
+	.modal-content.line .detail-img,.modal-content.line .detail-txt {
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+
+	.detail-img.graphic {
+		width: 100%;
+	}
+
+	.detail-img.graphic.cliniccard {
+		width: 100%;
 	}
 
 	/* video */
@@ -227,5 +306,23 @@ max-width:950px,footer-contentsのみ
 	/* parallax */
 	.box {
 		height: 100%;
+	}
+
+	/* modal */
+	.modal-inner {
+		margin:100px 20px;
+
+	}
+
+	.mock-up {
+		height: 100%;
+	}
+
+	.detail {
+		display: block;
+	}
+
+	.detail-img, .detail-txt{
+		width: 100%;
 	}
 }
