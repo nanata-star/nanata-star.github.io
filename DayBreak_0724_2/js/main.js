@@ -96,7 +96,7 @@ $(function(){
     $('#wc-02').load('.../ajax-pages/webdesign/wc-02.txt');
     $('#wc-03').load('../ajax-pages/webdesign/wc-03.txt');
     // wi
-    $('#wi-01').load('../ajax-pages/webdesign/wi-01.txt');
+    $('#wi-01').load('/ajax-pages/webdesign/wi-01.txt');
     $('#wi-02').load('../ajax-pages/webdesign/wi-02.txt');
     $('#wi-03').load('../ajax-pages/webdesign/wi-03.txt');
     $('#wi-04').load('../ajax-pages/webdesign/wi-04.txt');
