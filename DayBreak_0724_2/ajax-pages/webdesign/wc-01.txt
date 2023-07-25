@@ -16,8 +16,8 @@
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
-          <a href="./img/Harmonia-pc.webp" target="_blank">
-            <img src="./img/Harmonia-pc.png" alt="">
+          <a href="/img/Harmonia-pc.webp" target="_blank">
+            <img src=".../img/Harmonia-pc.png" alt="">
           </a>
         </div>
 
