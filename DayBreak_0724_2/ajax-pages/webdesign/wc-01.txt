@@ -5,8 +5,9 @@
   -->
 
   <div class="modal-content">
-    <div class="modal-inner">
-	<div class="modal-close">×</div>
+    <div id="wc-01">
+     <div class="modal-inner">
+    	<div class="modal-close">×</div>
       <h4>作品タイトル</h4>
 
       <div class="mock-up">
@@ -34,6 +35,7 @@
           </dl>
         </div>
       </div>
+     </div>
     </div>
   </div>
 

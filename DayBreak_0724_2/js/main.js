@@ -82,11 +82,11 @@ $(function(){
       $('.modal-container').removeClass('active');
     });
 
-    //モーダルの外側をクリックしたらモーダルを閉じる
+    // モーダルの外側をクリックしたらモーダルを閉じる
     $(document).on('click',function(e) {
       if(!$(e.target).closest('.modal-inner').length) {$('.modal-container').removeClass('active');
       }
-      // return false; ←これCOすると新規ウィンドウ開ける
+    //   // return false; ←これCOすると新規ウィンドウ開ける
     });
 
     // ajax
