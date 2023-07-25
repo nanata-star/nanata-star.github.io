@@ -92,8 +92,8 @@ $(function(){
     // ajax
 
     // wc
-    $('#wc-01').load('../ajax-pages/webdesign/wc-01.txt');
-    $('#wc-02').load('../ajax-pages/webdesign/wc-02.txt');
+    $('#wc-01').load('./ajax-pages/webdesign/wc-01.txt');
+    $('#wc-02').load('.../ajax-pages/webdesign/wc-02.txt');
     $('#wc-03').load('../ajax-pages/webdesign/wc-03.txt');
     // wi
     $('#wi-01').load('../ajax-pages/webdesign/wi-01.txt');
