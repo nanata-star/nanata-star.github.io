@@ -3,7 +3,7 @@
     <div class="modal-inner web-item">
     	<div class="modal-close">×</div>
       <h4>作品タイトル</h4>
-      <img src="/img/wagokoro-banner02.png" alt="">
+      <img src="./img/wagokoro-banner02.png" alt="">
 
       <div class="detail-txt web-item-detail">
         <dl>

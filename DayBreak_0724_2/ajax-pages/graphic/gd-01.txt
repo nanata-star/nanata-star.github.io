@@ -3,13 +3,13 @@
       <h4>作品タイトル</h4>
 
       <div class="mock-up">
-        <img src="/img/shiburashi-stamp.webp" alt="">
+        <img src="./img/shiburashi-stamp.webp" alt="">
       </div>
 
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
-            <img src="/img/shiburashi-stamp-mu.webp" alt="">
+            <img src="./img/shiburashi-stamp-mu.webp" alt="">
         </div>
 
         <div class="detail-txt">

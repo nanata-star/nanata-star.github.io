@@ -10,14 +10,14 @@
       <h4>作品タイトル</h4>
 
       <div class="mock-up">
-        <img src="/img/parallax02.jpg" alt="">
+        <img src="./img/parallax02.jpg" alt="">
       </div>
 
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
-          <a href="/img/cafe_haleine.webp" target="_blank">
-            <img src="/img/cafe_haleine.webp" alt="">
+          <a href="./img/cafe_haleine.webp" target="_blank">
+            <img src="./img/cafe_haleine.webp" alt="">
           </a>
         </div>
 
