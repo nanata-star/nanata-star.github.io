@@ -1,27 +1,27 @@
 <div class="modal-inner">
 	<div class="modal-close">×</div>
-      <h4>作品タイトル</h4>
+      <h4>シブらしスタンプ</h4>
 
       <div class="mock-up">
-        <img src="./img/shiburashi-stamp.webp" alt="">
+        <img src="./img/shiburashi-stamp.webp" alt="LINEスタンプの画像">
       </div>
 
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
-            <img src="./img/shiburashi-stamp-mu.webp" alt="">
+            <img src="./img/shiburashi-stamp-mu.webp" alt="LINEスタンプの画像">
         </div>
 
         <div class="detail-txt">
           <dl>
             <dt>コンセプト</dt>
-            <dd>詳細テキストテキスト</dd>
+            <dd>可愛いけどちょっとシブいアザラシの、シュールさもあるスタンプです。</dd>
             <dt>制作ツール</dt>
-            <dd>詳細</dd>
-            <dt>制作時間</dt>
-            <dd>＠＠時間</dd>
+            <dd>Illustlator</dd>
+            <dt>デザイン・制作時間</dt>
+            <dd>約5時間</dd>
             <dt>制作意図</dt>
-            <dd>こういうところに留意しました</dd>
+            <dd>全体的にシブさを醸すため、掠れのある線を用いたり、明朝体を使うなど工夫しています。</dd>
           </dl>
         </div>
       </div>

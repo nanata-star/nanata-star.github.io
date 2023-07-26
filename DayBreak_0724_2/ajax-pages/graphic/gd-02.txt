@@ -1,27 +1,27 @@
 <div class="modal-inner">
 	<div class="modal-close">×</div>
-      <h4>作品タイトル</h4>
+      <h4>シブらし絵文字</h4>
 
       <div class="mock-up">
-        <img src="./img/shiburashi-emoji.webp" alt="">
+        <img src="./img/shiburashi-emoji.webp" alt="LINE絵文字の画像">
       </div>
 
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
-            <img src="./img/shiburashi-emoji-mu.webp" alt="">
+            <img src="./img/shiburashi-emoji-mu.webp" alt="LINE絵文字の画像">
         </div>
 
         <div class="detail-txt">
           <dl>
             <dt>コンセプト</dt>
-            <dd>詳細テキストテキスト</dd>
+            <dd>可愛いけどちょっとシブいアザラシの表情を楽しむ絵文字です。</dd>
             <dt>制作ツール</dt>
-            <dd>詳細</dd>
-            <dt>制作時間</dt>
-            <dd>＠＠時間</dd>
+            <dd>Illustrator</dd>
+            <dt>デザイン・制作時間</dt>
+            <dd>約５時間</dd>
             <dt>制作意図</dt>
-            <dd>こういうところに留意しました</dd>
+            <dd>180*180pxという小さいサイズ制限の中で、視認性を上げるため顔のアップのデザインにしました。吹き出しの絵文字と組み合わせることもできるので、使い方の幅が広がります。</dd>
           </dl>
         </div>
       </div>
