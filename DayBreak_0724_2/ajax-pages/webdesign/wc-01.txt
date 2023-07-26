@@ -7,7 +7,7 @@
   <div class="modal-content">
     <div id="wc-01">
      <div class="modal-inner">
-    	<div class="modal-close">×</div>
+
       <h4>作品タイトル</h4>
 
       <div class="mock-up">

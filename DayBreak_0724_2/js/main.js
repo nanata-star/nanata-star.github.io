@@ -30,10 +30,10 @@ $(function(){
   }else {
       $("#splash").css("display", "none");//同日2回目のアクセスでローディング画面非表示
   }
-});
+
 
 // パララックス
-$(function(){
+
 	let image = document.getElementsByClassName('parallax');
 	new simpleParallax(image);
   // 同じパララックス効果をまとめて適用
@@ -44,10 +44,10 @@ $(function(){
     delay:'1',
     transition: 'cubic-bezier(0,0,0,.1)'
   });
-});
+
 
 // ハンバーガー
-$(function () {
+
   $('.hamburger').on('click', function () {
     console.log('ok');
     $('.hm-nav').toggleClass('is-active');
@@ -58,11 +58,11 @@ $(function () {
     $(".hamburger").removeClass('is-active');//ボタンの activeクラスを除去し
     $(".hm-nav").removeClass('is-active');//ナビゲーションのクラスも除去
   });
-});
+
 
 
 // ナビゲーション、フッターまで入ったら消える
-  $(function(){
+
     let footer = $('footer').innerHeight(); // footerの高さを取得
 
     window.onscroll = function () {
@@ -76,28 +76,33 @@ $(function () {
         $('.nav-wrap').removeClass('is-hidden'); //footerより上にスクロールしたらis-hiddenを削除
       }
     };
-  });
+
 
   // // モーダル
-
-  $(function(){
     // モーダルウィンドウを開く
     $('.modal-open').on('click', function(){
       var target = $(this).data('target');
       var modal = document.getElementById(target);
 
       $(modal).addClass('active');
+
+      // $(".hamburger").removeClass('is-active');//ボタンの activeクラスを除去し
+      // $(".hm-nav").removeClass('is-active');//ナビゲーションのクラスも除去
+      $('.hamburger-box').css('display','none');
       return false;
     });
-
+    
     // 閉じるボタンをクリックしたらモーダルを閉じる
     $('.modal-close').on('click',function(){
       $('.modal-container').removeClass('active');
+      $('.hamburger-box').css('display','block');
+      
     });
-
+    
     // モーダルの外側をクリックしたらモーダルを閉じる
     $(document).on('click',function(e) {
       if(!$(e.target).closest('.modal-inner').length) {$('.modal-container').removeClass('active');
+      $('.hamburger-box').css('display','block');
       }
     //   // return false; ←これCOすると新規ウィンドウ開ける
     });
