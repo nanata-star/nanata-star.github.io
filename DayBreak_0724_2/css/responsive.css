@@ -183,7 +183,17 @@ max-width:950px,footer-contentsのみ
 
 
 @media(max-width:414px) {
-	/* 414body共通 */
+	/* 動画背景／スマホ用 */
+	.bg-video-sp {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/DB-heroVideo-sp.gif);
+	}
+
+	#bg-video-area {
+	display: none;
+	}
+
 
 	/* ナビ非表示 */
 
