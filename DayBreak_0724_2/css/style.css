@@ -241,9 +241,11 @@ nav
 .section h2 {
 	font-size: var(--h2-fontSize);
 	color: var(--color5);
+	display: block;
 	letter-spacing: 0.1rem;
 	padding: 10px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 .section-detail {
@@ -790,14 +792,14 @@ index.html内のモーダル設定
 
 .mock-up {
 	margin-bottom: 20px;
-	height: 550px;
+	/* height: 550px; */
 }
-
+/* 
 .mock-up>img {
 	object-fit: cover;
 	height: 100%;
 	width: 100%;
-}
+} */
 
 .detail {
 	display: flex;

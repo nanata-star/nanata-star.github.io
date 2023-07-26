@@ -106,6 +106,16 @@ max-width:950px,footer-contentsのみ
 		padding:30px 2% 60px;
 	}
 
+	/* web design */
+	.section-detail>dl {
+		display: block;
+		text-align-last: left;
+	}
+
+	.section-detail dd {
+		padding-left: 20px;
+	}
+
 	/* comic */
 	.detail-img.comic img {
 		height: 100%;

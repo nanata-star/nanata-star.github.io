@@ -11,7 +11,7 @@
       <h4>作品タイトル</h4>
 
       <div class="mock-up">
-        <img src="./img/parallax06.jpg" alt="">
+        <img src="./img/mock-up-harmonia.webp" alt="">
       </div>
 
       <div class="detail">
