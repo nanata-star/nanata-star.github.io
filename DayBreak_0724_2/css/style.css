@@ -396,6 +396,7 @@ Comicの固有設定
 
 .detail-img.comic {
 	width: 100%;
+	margin: 0 auto;
 }
 
 .detail-img.comic img {
