@@ -91,14 +91,14 @@ $(function(){
       $('.hamburger-box').css('display','none');
       return false;
     });
-    
+
     // 閉じるボタンをクリックしたらモーダルを閉じる
     $('.modal-close').on('click',function(){
       $('.modal-container').removeClass('active');
       $('.hamburger-box').css('display','block');
-      
+
     });
-    
+
     // モーダルの外側をクリックしたらモーダルを閉じる
     $(document).on('click',function(e) {
       if(!$(e.target).closest('.modal-inner').length) {$('.modal-container').removeClass('active');
@@ -118,6 +118,7 @@ $(function(){
     $('#wi-02').load('./ajax-pages/webdesign/wi-02.txt');
     $('#wi-03').load('./ajax-pages/webdesign/wi-03.txt');
     $('#wi-04').load('./ajax-pages/webdesign/wi-04.txt');
+    $('#wi-05').load('./ajax-pages/webdesign/wi-05.txt');
     // gd
     $('#gd-01').load('./ajax-pages/graphic/gd-01.txt');
     $('#gd-02').load('./ajax-pages/graphic/gd-02.txt');

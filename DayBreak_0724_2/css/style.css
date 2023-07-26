@@ -290,6 +290,7 @@ nav
 
 /* サムネイル用キャプション設定 */
 .caption {
+	display: block;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -301,14 +302,15 @@ nav
 	background-color:#1e16319c;
 	transform: translateY(100%);
 	transition: .3s;
-}
-
-.caption {
 	color: var(--color4);
 }
 
 .grid-3 .caption, .grid-4 .caption  {
 	height: 50%;
+}
+
+.caption.type2 {
+	height: 100%;
 }
 
 .modal-open>p, .non-modal>p{

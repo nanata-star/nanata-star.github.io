@@ -236,7 +236,7 @@ max-width:950px,footer-contentsのみ
 	}
 
 	.caption {
-		display: none;
+		/* display: none; */
 	}
 
 	/* web design */

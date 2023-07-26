@@ -1,0 +1,15 @@
+      <h4>作品タイトル</h4>
+      <img src="./img/tea-banner01.png" alt="">
+
+      <div class="detail-txt web-item-detail">
+        <dl>
+          <dt>コンセプト</dt>
+          <dd>詳細テキストテキストだよ</dd>
+          <dt>制作ツール</dt>
+          <dd>詳細</dd>
+          <dt>制作時間</dt>
+          <dd>＠＠時間</dd>
+          <dt>制作意図</dt>
+          <dd>あれおかしいなあれおかしいなあれおかしいなあれおかしいなあれおかしいな</dd>
+        </dl>
+      </div>
