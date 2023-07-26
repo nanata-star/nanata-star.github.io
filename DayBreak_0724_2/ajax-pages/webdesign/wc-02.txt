@@ -4,8 +4,6 @@
     CSSは母体に記述
   -->
 
-  <div class="modal-content">
-    <div class="modal-inner">
 
       <h4>作品タイトル</h4>
 
@@ -35,5 +33,3 @@
         </div>
       </div>
     </div>
-  </div>
-
