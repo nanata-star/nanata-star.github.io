@@ -339,7 +339,7 @@ max-width:950px,footer-contentsのみ
 		padding: 0;
 	}
 	.modal-inner {
-		margin:0px 20px;
+		margin:60px 20px 0;
 	}
 
 	.mock-up {
