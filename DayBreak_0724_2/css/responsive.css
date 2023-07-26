@@ -321,9 +321,11 @@ max-width:950px,footer-contentsのみ
 	}
 
 	/* modal */
+	.modal-container{
+		padding: 0;
+	}
 	.modal-inner {
 		margin:0px 20px;
-
 	}
 
 	.mock-up {
