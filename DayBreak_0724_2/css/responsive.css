@@ -245,6 +245,10 @@ max-width:950px,footer-contentsのみ
 		margin: 30px auto;
 	}
 
+	.detail-txt>dl>dd {
+		padding-left: 0;
+	}
+
 	/* graphic */
 	.modal-content.line .mock-up img {
 		width: 85%;
