@@ -830,3 +830,41 @@ index.html内のモーダル設定
 	padding-left: 20px;
 	font-size: var(--p-fontSize);
 }
+
+/* -----------------------------
+thsnks.html
+-------------------------------- */
+.thanks-body {
+	background-color: var(--color2);
+	padding: 0 4%;
+}
+#bg {
+	max-width: 600px;
+	height: 150px;
+	margin: 10% auto 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.bg_inner>h1{
+	padding-top: 30px;
+	color: var(--color1);
+}
+
+.bg_inner>p>a {
+	border-radius: 7px;
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 30px auto 0;
+	font-size: 1.3rem;
+	line-height: 40px;
+	color: var(--color4);
+	background-color: var(--color1);
+	transition: .3s;
+}
+
+.bg_inner>p>a:hover {
+	background-color: var(--color3);
+	transition: .3s;
+}
