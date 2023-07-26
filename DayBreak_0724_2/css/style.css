@@ -399,7 +399,7 @@ Comicの固有設定
 }
 
 .detail-img.comic img {
-	height: 80vh;
+	/* height: 80vh; */
 }
 
 rt {
