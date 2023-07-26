@@ -68,12 +68,12 @@ max-width:950px,footer-contentsのみ
 }
 
 .hm-nav ul {
-	padding-top: 100px;
+	padding-top: 60px;
 }
 
 .hm-nav img {
 	width: 30vw;
-	margin-top: 10vh;
+	margin-top: 5vh;
 }
 
 .hm-nav a {
@@ -85,6 +85,7 @@ max-width:950px,footer-contentsのみ
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	text-underline-offset: 8px;
+	font-weight: bold;
 }
 
 .hm-nav.is-active{

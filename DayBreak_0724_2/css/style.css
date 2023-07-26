@@ -710,7 +710,7 @@ index.html内のモーダル設定
 	/*Firefoxへの対応*/
 	scrollbar-width: none;
 	/* tb、spのスワイプ無効化 */
-	touch-action: none;
+	/* touch-action: none; */
 }
 /* 本体スクロール抑止 */
 .modal-container::before,
