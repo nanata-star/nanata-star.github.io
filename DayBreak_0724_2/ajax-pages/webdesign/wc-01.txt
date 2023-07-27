@@ -12,7 +12,10 @@
 
       <div class="detail">
         <!-- flex -->
-        <div class="detail-img">
+        <div class="detail-img"><!-- flex -->
+          <a href="./img/Harmonia-pc.webp" target="_blank">
+            <img src="./img/Harmonia-pc.png" alt="ヘアサロンのWebカンプ">
+          </a>
           <a href="./img/Harmonia-pc.webp" target="_blank">
             <img src="./img/Harmonia-pc.png" alt="ヘアサロンのWebカンプ">
           </a>
@@ -20,14 +23,18 @@
 
         <div class="detail-txt">
           <dl>
-            <dt>コンセプト</dt>
+            <dt>デザインの目的</dt>
             <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
-            <dt>制作ツール</dt>
+            <dt>架空クライアント</dt>
             <dd>Figma、Photoshop、Illustlator</dd>
-            <dt>制作時間</dt>
+            <dt>課題と解決策</dt>
             <dd>約５日</dd>
-            <dt>制作意図</dt>
+            <dt>製作期間</dt>
             <dd>地域性やターゲットを</dd>
+            <dt>担当作業</dt>
+            <dd>あああああああああああああ</dd>
+            <dt>作業工程</dt>
+            <dd>あああああああああああああああああああああ</dd>
           </dl>
         </div>
       </div>

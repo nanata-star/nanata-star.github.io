@@ -6,10 +6,11 @@
 		--color3:#8f80d2;
 		--color4:#fff;
 		--color5:#1e1631;
+		--color6:rgb(247, 242, 233);
 		--h2-fontSize:4.8rem;
 		--h3-fontSize:2.8rem;
 		--h4-fontSize:2.2rem;
-		--p-fontSize:1.6rem;
+		--p-fontSize:1.2rem;
 		--letterspacing:0.05em;
 	}
 
@@ -791,10 +792,10 @@ index.html内のモーダル設定
 
 }
 .modal-inner {
-	margin: 50px;
+	margin: 50px 20px;
 	padding:4% 2%;
 	border-radius: 10px;
-	background-color: rgb(247, 242, 233);
+	background: rgb(247, 242, 233);
 	position: relative;
 }
 
@@ -817,32 +818,157 @@ index.html内のモーダル設定
 
 .detail {
 	display: flex;
-	justify-content: space-between;
-	text-align-last: left;
+	flex-wrap: wrap-reverse;
 }
 
 .detail-img {
-	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.detail-img a:nth-child(1) {
+	width: 70%;
+}
+.detail-img a:nth-of-type(2) {
+	width: 28%;
 }
 
 .detail-txt {
-	width: 38%;
+	width: 96%;
+	margin: 0 auto;
 }
 
 .detail-txt>dl>dt {
-	font-weight: bold;
-	background-color:var(--color3);
-	color: var(--color4);
-	font-size: var(--p-fontSize);
+	text-align: center;
+	padding: 20px 0px 5px;
+	width: 400px;
+	display: inline-block;
+	margin-bottom: 20px;
+	color: var(--color3);
+	font-size: 1.4rem;
 	letter-spacing: var(--letterspacing);
-	margin-bottom: 5px;
-	padding-left: 10px;
+	border-top: 1px solid var(--color3);
+	border-bottom: 1px solid var(--color3);
+	position: relative;
+	font-weight: bold;
+	background-image: url(../img/prf-bg.png);
+	background-repeat: repeat;
+}
+
+.detail-txt>dl>dt:nth-of-type(2)::after {
+	content: "02.client";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
+}
+
+.detail-txt>dl>dt:nth-of-type(3)::after {
+	content: "03.problem & solution";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
+}
+
+.detail-txt>dl>dt:nth-of-type(1)::after {
+	content: "01.purpose";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
+}
+
+.detail-txt>dl>dt:nth-of-type(1)::after {
+	content: "01.purpose";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
+}
+
+.detail-txt>dl>dt:nth-of-type(1)::after {
+	content: "01.purpose";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
+}
+
+.detail-txt>dl>dt:nth-of-type(1)::after {
+	content: "01.purpose";
+	background-color: var(--color3);
+	color: var(--color4);
+	border: 1px solid var(--color3);
+	display: block;
+	width: fit-content;
+	padding: 0px 10px;
+	height: 26px;
+	line-height: 23px;
+	border-radius: 30px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: normal;
 }
 
 .detail-txt>dl>dd {
-	margin-bottom: 20px;
-	padding-left: 3px;
+	text-align-last: left;
 	font-size: var(--p-fontSize);
+	width: 70%;
+	margin: 0 auto 20px;
+	
 }
 
 /* -----------------------------
