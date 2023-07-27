@@ -4,30 +4,30 @@
     CSSは母体に記述
   -->
 
-      <h4>作品タイトル</h4>
+      <h4>ヘアサロン「ハルモニア」</h4>
 
       <div class="mock-up">
-        <img src="./img/mock-up-harmonia.webp" alt="">
+        <img src="./img/mock-up-harmonia.webp" alt="ヘアサロンのWebカンプ">
       </div>
 
       <div class="detail">
         <!-- flex -->
         <div class="detail-img">
           <a href="./img/Harmonia-pc.webp" target="_blank">
-            <img src="./img/Harmonia-pc.png" alt="">
+            <img src="./img/Harmonia-pc.png" alt="ヘアサロンのWebカンプ">
           </a>
         </div>
 
         <div class="detail-txt">
           <dl>
             <dt>コンセプト</dt>
-            <dd>詳細テキストテキスト</dd>
+            <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
             <dt>制作ツール</dt>
-            <dd>詳細</dd>
+            <dd>Figma、Photoshop、Illustlator</dd>
             <dt>制作時間</dt>
-            <dd>＠＠時間</dd>
+            <dd>約５日</dd>
             <dt>制作意図</dt>
-            <dd>こういうところに留意しました</dd>
+            <dd>地域性やターゲットを</dd>
           </dl>
         </div>
       </div>
