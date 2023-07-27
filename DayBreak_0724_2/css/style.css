@@ -23,9 +23,9 @@ html {
 
 /* 全体共通 */
 * {
-	font-family: 'Noto Sans JP', sans-serif;
 	font-family: 'Quicksand', sans-serif;
-
+	font-family: 'Shippori Mincho', serif;
+	font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 /* -------------------------
@@ -727,9 +727,8 @@ index.html内のモーダル設定
 	-ms-overflow-style: none;
 	/*Firefoxへの対応*/
 	scrollbar-width: none;
-	/* tb、spのスワイプ無効化 */
-	/* touch-action: none; */
 }
+
 /* 本体スクロール抑止 */
 .modal-container::before,
 .modal-container::after {
@@ -772,12 +771,13 @@ index.html内のモーダル設定
   /* align-items: center; */
   /* justify-content: center; */
   top: -40px;
-  right: -30px;
+  right: -40px;
   font-size: 40px;
-  color: white;
+  color: var(--color4);
 	display: block;
   cursor: pointer;
 	z-index: 5500;
+	font-weight: 700;
 }
 
 /* ----------------------------
@@ -796,6 +796,8 @@ index.html内のモーダル設定
 	padding:4% 2%;
 	border-radius: 10px;
 	background: rgb(247, 242, 233);
+	outline: 6px solid var(--color3);
+  outline-offset: -6px;
 	position: relative;
 }
 
@@ -809,12 +811,6 @@ index.html内のモーダル設定
 	margin-bottom: 20px;
 	/* height: 550px; */
 }
-/*
-.mock-up>img {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-} */
 
 .detail {
 	display: flex;
@@ -838,137 +834,104 @@ index.html内のモーダル設定
 	margin: 0 auto;
 }
 
-.detail-txt>dl>dt {
+.detail-txt>dl {
+	margin-top: 45px;
+}
+
+.dt-dd-wrap {
+	position: relative;
+}
+
+.dt-dd-wrap li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.detail-txt dl dt {
 	text-align: center;
-	padding: 20px 0px 5px;
-	width: 400px;
+	width: 60%;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	color: var(--color3);
 	font-size: 1.4rem;
 	letter-spacing: var(--letterspacing);
-	border-top: 1px solid var(--color3);
-	border-bottom: 1px solid var(--color3);
-	position: relative;
 	font-weight: bold;
-	background-image: url(../img/prf-bg.png);
 	background-repeat: repeat;
 }
 
-.detail-txt>dl>dt:nth-of-type(2)::after {
-	content: "02.client";
+/* タイトルの上下線 */
+.detail-txt dl dt::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	width: 60%;
+	transform: translateX(-50%);
+	border-top: 2px solid var(--color3);
+	padding: 20px 0px 24px;
+	border-bottom: 2px solid var(--color3);
+}
+
+/* タイトル英語 */
+.detail-txt dt::after {
 	background-color: var(--color3);
 	color: var(--color4);
-	border: 1px solid var(--color3);
+	border: 6px solid var(--color6);
 	display: block;
 	width: fit-content;
 	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
+	height: 36px;
+	line-height: 22px;
 	border-radius: 30px;
 	position: absolute;
-	top: -13px;
+	top: -38px;
 	left: 50%;
 	transform: translateX(-50%);
 	font-weight: normal;
 }
 
-.detail-txt>dl>dt:nth-of-type(3)::after {
-	content: "03.problem & solution";
-	background-color: var(--color3);
-	color: var(--color4);
-	border: 1px solid var(--color3);
-	display: block;
-	width: fit-content;
-	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
-	border-radius: 30px;
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-weight: normal;
+
+.dt-dd-wrap dt:nth-of-type(1)::after {
+	content: "01.Purpose";
 }
 
-.detail-txt>dl>dt:nth-of-type(1)::after {
-	content: "01.purpose";
-	background-color: var(--color3);
-	color: var(--color4);
-	border: 1px solid var(--color3);
-	display: block;
-	width: fit-content;
-	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
-	border-radius: 30px;
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-weight: normal;
+.dt-dd-wrap:nth-of-type(2) dt::after {
+	content: "02.Client";
 }
 
-.detail-txt>dl>dt:nth-of-type(1)::after {
-	content: "01.purpose";
-	background-color: var(--color3);
-	color: var(--color4);
-	border: 1px solid var(--color3);
-	display: block;
-	width: fit-content;
-	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
-	border-radius: 30px;
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-weight: normal;
+.dt-dd-wrap:nth-of-type(3) dt::after {
+	content: "03.Problem & Solution";
 }
 
-.detail-txt>dl>dt:nth-of-type(1)::after {
-	content: "01.purpose";
-	background-color: var(--color3);
-	color: var(--color4);
-	border: 1px solid var(--color3);
-	display: block;
-	width: fit-content;
-	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
-	border-radius: 30px;
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-weight: normal;
+.dt-dd-wrap:nth-of-type(4) dt::after {
+	content: "04.期間";
+}
+.dt-dd-wrap:nth-of-type(5) dt::after {
+	content: "05.Tools";
+}
+.dt-dd-wrap:nth-of-type(6) dt::after {
+	content: "06.Process";
 }
 
-.detail-txt>dl>dt:nth-of-type(1)::after {
-	content: "01.purpose";
-	background-color: var(--color3);
-	color: var(--color4);
-	border: 1px solid var(--color3);
-	display: block;
-	width: fit-content;
-	padding: 0px 10px;
-	height: 26px;
-	line-height: 23px;
-	border-radius: 30px;
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-weight: normal;
-}
-
-.detail-txt>dl>dd {
-	text-align-last: left;
+.detail-txt>dl dd {
+	text-align: left;
 	font-size: var(--p-fontSize);
-	width: 70%;
-	margin: 0 auto 20px;
-	
+	width: 90%;
+	margin: 0 auto 55px;
+	color: var(--color5);
+}
+
+.dt-dd-wrap:nth-of-type(4) dd {
+	text-align: center;
+}
+.dt-dd-wrap:nth-of-type(5) dd {
+	width: fit-content;
+	margin: 0 auto;
+}
+.dt-dd-wrap:nth-of-type(6) dd {
+	width: fit-content;
+	margin: 0 auto;
 }
 
 /* -----------------------------
