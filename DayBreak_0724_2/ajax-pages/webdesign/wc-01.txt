@@ -1,65 +1,59 @@
+<h4>ヘアサロン「ハルモニア」</h4>
 
-  <!--
-    ここ以下を同名ファイルの.txtという拡張子に変えて保存！！
-    CSSは母体に記述
-  -->
+<div class="mock-up">
+  <img src="./img/mock-up-harmonia.webp" alt="ヘアサロンのWebカンプ">
+</div>
 
-      <h4>ヘアサロン「ハルモニア」</h4>
+<div class="detail">
+  <!-- flex -->
+  <div class="detail-img"><!-- flex -->
+    <a href="./img/Harmonia-pc.webp" target="_blank">
+      <img src="./img/Harmonia-pc.png" alt="ヘアサロンのWebカンプ">
+    </a>
+    <a href="./img/Harmonia-sp.png" target="_blank">
+      <img src="./img/Harmonia-sp.png" alt="ヘアサロンのWebカンプ">
+    </a>
+  </div>
 
-      <div class="mock-up">
-        <img src="./img/mock-up-harmonia.webp" alt="ヘアサロンのWebカンプ">
+  <div class="detail-txt">
+    <dl class="grid-2"> <!-- grid -->
+      <div class="dt-dd-wrap">
+      <dt>デザインの目的</dt>
+      <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
       </div>
 
-      <div class="detail">
-        <!-- flex -->
-        <div class="detail-img"><!-- flex -->
-          <a href="./img/Harmonia-pc.webp" target="_blank">
-            <img src="./img/Harmonia-pc.png" alt="ヘアサロンのWebカンプ">
-          </a>
-          <a href="./img/Harmonia-sp.png" target="_blank">
-            <img src="./img/Harmonia-sp.png" alt="ヘアサロンのWebカンプ">
-          </a>
-        </div>
-
-        <div class="detail-txt">
-          <dl class="grid-2"> <!-- grid -->
-            <div class="dt-dd-wrap">
-            <dt>デザインの目的</dt>
-            <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
-            </div>
-
-            <div class="dt-dd-wrap">
-            <dt>架空クライアント</dt>
-            <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
-            </div>
-
-            <div class="dt-dd-wrap">
-            <dt>課題と解決策</dt>
-            <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
-            </div>
-
-            <div class="dt-dd-wrap">
-            <dt>製作期間</dt>
-            <dd>約　　日</dd>
-            </div>
-
-            <div class="dt-dd-wrap">
-            <dt>使用ツール</dt>
-            <dd><ul>
-            <li>Photoshop</li>
-            <li>Illustlator</li>
-            <li>Figma</li>
-            </ul></dd>
-            </div>
-
-            <div class="dt-dd-wrap">
-            <dt>作業工程</dt>
-            <dd><ul>
-            <li>コーディングする</li>
-            <li>切り抜く</li>
-            <li>画像を合成する</li>
-            </ul></dd>
-            </div>
-          </dl>
-        </div>
+      <div class="dt-dd-wrap">
+      <dt>架空クライアント</dt>
+      <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
       </div>
+
+      <div class="dt-dd-wrap">
+      <dt>課題と解決策</dt>
+      <dd>新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。新規の地域密着型ヘアサロンの周知・集客に向けたサイトのデザインです。</dd>
+      </div>
+
+      <div class="dt-dd-wrap">
+      <dt>担当箇所</dt>
+      <dd><ul>
+      <li>Photoshop</li>
+      <li>Illustlator</li>
+      <li>Figma</li>
+      </ul></dd>
+      </div>
+
+      <div class="dt-dd-wrap">
+      <dt>製作期間</dt>
+      <dd>約　　日</dd>
+      </div>
+
+      <div class="dt-dd-wrap">
+      <dt>ツール</dt>
+      <dd><ul>
+      <li>Photoshop</li>
+      <li>Illustlator</li>
+      <li>Figma</li>
+      </ul></dd>
+      </div>
+    </dl>
+  </div>
+</div>
