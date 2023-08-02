@@ -240,6 +240,11 @@ nav
 	transition: .3s;
 }
 
+#comic .modal-open:hover.modal-open>img {
+	transform: scale(1.1);
+	transition: .3s;
+}
+
 .modal-open.wi-tn img {
 	height: 100%;
 	width: 100%;
@@ -517,6 +522,11 @@ rt {
 	font-size: 1.2rem;
 	text-align: center;
 }
+
+#comic p {
+	margin-top: 25px;
+	padding: 0 25px;
+}
 /* ------------------------------
 videoセクション
 --------------------------------- */
@@ -731,7 +741,7 @@ footer
 
 .footer-content h3{
 font-size: var(--h4-fontSize);
-letter-spacing: 0.02em;
+letter-spacing: 0.06em;
 margin-bottom: 5px;
 border-bottom: 1px solid var(--color2);
 }
