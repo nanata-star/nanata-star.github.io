@@ -95,6 +95,11 @@ letter-spacing: var(--letterspacing);
 	display: none;
 }
 
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 
 #bg-video-area {
 	position: absolute;
@@ -275,7 +280,7 @@ nav
 	color: var(--color5);
 	display: block;
 	letter-spacing: 0.1rem;
-	padding: 10px;
+	padding: 10px 15px;
 	margin-top: 0px;
 	margin-bottom: 80px;
 	font-weight: 600;
@@ -640,6 +645,10 @@ Profileセクション
 	z-index: 4;
 	color:var(--color5);
 	font-size: 1.4rem;
+}
+
+.prf-grid li:nth-child(4) p{
+	font-size: 1.3rem;
 }
 
 /* --------------------------

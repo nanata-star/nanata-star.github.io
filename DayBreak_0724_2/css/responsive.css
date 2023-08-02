@@ -109,7 +109,10 @@ max-width:950px,footer-contentsのみ
 	dl.grid-2 {
 		grid-template-columns: repeat(1,1fr);
 		margin-bottom: 0;
-		
+	}
+
+	.section h2::before {
+		left: -58px;
 	}
 
 	/* web design */
@@ -141,7 +144,7 @@ max-width:950px,footer-contentsのみ
 		width: 70%;
 		margin: 0 auto;
 	}
-	
+
 	#profile h3 {
 		font-size: var(--h4-fontSize);
 		margin-top: 30px;
@@ -155,19 +158,15 @@ max-width:950px,footer-contentsのみ
 		width: 100%;
 	}
 
-	.prf-detail dl {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	
 	.prf-detail dt {
 		margin-bottom: 12px;
-		width: 20%;
+		font-size: 1.6rem;
+		background-image: url(../img/prf-bg.png);
+		background-repeat: repeat;
 	}
 
 	.prf-detail dd {
-		width: 70%;
+		text-align: center;
 	}
 
 	.skill-detail {
@@ -207,10 +206,11 @@ max-width:950px,footer-contentsのみ
 
 	/* section,grid設定 */
 	.section h2 {
-		font-size: var(--h3-fontSize);
+		font-size: var(--h2-fontSize);
+		text-align: center;
 	}
 	.section h3 {
-		font-size: var(--h4-fontSize);
+		font-size: var(--h3-fontSize);
 	}
 
 	.section-detail>dl>dt {
@@ -242,10 +242,9 @@ max-width:950px,footer-contentsのみ
 		padding:30px 2% 60px;
 	}
 
-	.caption {
-		/* display: none; */
+	.section h2::before {
+		left: -50px;
 	}
-
 
 
 
@@ -294,7 +293,7 @@ max-width:950px,footer-contentsのみ
 	.prf-grid li {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 	.prf-grid li img {
@@ -305,6 +304,7 @@ max-width:950px,footer-contentsのみ
 		width: 75%;
 		position: static;
 		padding: 3%;
+		height: 92px
 	}
 
 	/* contact */

@@ -31,34 +31,22 @@ $(function(){
       $("#splash").css("display", "none");//同日2回目のアクセスでローディング画面非表示
   }
 
-
-// パララックス
-
-	let image = document.getElementsByClassName('parallax');
-	new simpleParallax(image);
-  // 同じパララックス効果をまとめて適用
-	let images = document.querySelectorAll('parallax');
-	new simpleParallax(images, {
-    orientation: 'right',
-    scale: '500',
-    delay:'1',
-    transition: 'cubic-bezier(0,0,0,.1)'
-  });
-
-
 // ハンバーガー
+  let state = false;
+  let pos;
 
   $('.hamburger').on('click', function () {
-    console.log('ok');
     $('.hm-nav').toggleClass('is-active');
     $('.hamburger').toggleClass('is-active');
+
+    $("body").toggleClass("fixed");
   });
 
   $(".hm-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".hamburger").removeClass('is-active');//ボタンの activeクラスを除去し
     $(".hm-nav").removeClass('is-active');//ナビゲーションのクラスも除去
+    $("body").removeClass("fixed");
   });
-
 
 
 // ナビゲーション、フッターまで入ったら消える
@@ -123,7 +111,4 @@ $(function(){
     $('#gd-01').load('./ajax-pages/graphic/gd-01.txt');
     $('#gd-02').load('./ajax-pages/graphic/gd-02.txt');
 
-
-    // gd
-    // comic
 });
