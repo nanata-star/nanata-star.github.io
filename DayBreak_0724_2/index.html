@@ -9,9 +9,18 @@
   <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="./css/hamburgers.css">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Shippori+Mincho&family=Zen+Maru+Gothic:wght@400;700&display=swap');
-  </style>
+  <!-- font -->
+  <link rel="stylesheet" href="https://use.typekit.net/mko2kbg.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'lsn6kvm',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
@@ -28,11 +37,11 @@
 
   <header id="header">
     <div class="main-visual">
-	<!-- 動画背景／pc、タブレット用 -->
+      <!-- 動画背景／pc、タブレット用 -->
       <h1><img src="./img/logo-title02.webp" alt="ロゴマーク"></h1>
       <div id="bg-video-area">
         <video id="bg-video" src="./img/PF-heroVideo1.mp4" autoplay muted playsinline loop>
-        </div>
+      </div>
       </video>
       <!-- 動画背景／スマホ用 -->
       <div class="bg-video-sp"></div>
@@ -58,29 +67,29 @@
     </div>
 
     <div class="hm-wrap">
-			<!-- レスポンシブ用ハンバーガーメニュー -->
-			<button class="hamburger hamburger--squeeze" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner">
-					</span>
-				</span>
-			</button>
-			<!-- ハンバーガーメニューリスト -->
-			<nav class="hm-nav">
+      <!-- レスポンシブ用ハンバーガーメニュー -->
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner">
+          </span>
+        </span>
+      </button>
+      <!-- ハンバーガーメニューリスト -->
+      <nav class="hm-nav">
         <div class="hm-logo">
           <img src="./img/logo406x226.png" alt="ロゴマーク">
         </div>
-				<ul>
-					<li><a href="#body">トップ</a></li>
-					<li><a href="#webdesign">#Web Design</a></li>
-					<li><a href="#graphic">#Grapfic</a></li>
-					<li><a href="#comic">#Comic</a></li>
-					<li><a href="#profile">#Profile</a></li>
-					<li><a href="#contact">#Contact</a></li>
+        <ul>
+          <li><a href="#body">トップ</a></li>
+          <li><a href="#webdesign">#Web Design</a></li>
+          <li><a href="#graphic">#Grapfic</a></li>
+          <li><a href="#comic">#Comic</a></li>
+          <li><a href="#profile">#Profile</a></li>
+          <li><a href="#contact">#Contact</a></li>
 
-				</ul>
-			</nav>
-		</div>
+        </ul>
+      </nav>
+    </div>
 
   </header>
 
@@ -155,7 +164,7 @@
                   <div class="modal-inner">
                     <div class="modal-close">×</div>
 
-                   <div id="wc-01"></div>
+                    <div id="wc-01"></div>
 
                   </div>
                 </div>
@@ -172,7 +181,7 @@
                 <div class="modal-content wc">
                   <div class="modal-inner">
                     <div class="modal-close">×</div>
-                      <div id="wc-02"></div>
+                    <div id="wc-02"></div>
                   </div>
                 </div>
               </div>
@@ -289,9 +298,6 @@
           </div>
     </section>
 
-    <div class="box">
-      <img src="./img/px-01.webp" alt="" class="parallax">
-    </div>
 
     <!-- Graphic -->
     <section id="graphic" class="section container">
@@ -602,11 +608,8 @@
 
 
 
-
         </div>
     </section>
-
-    <div class="box"><img src="./img/px-02.webp" alt="" class="parallax"></div>
 
     <!-- Comic -->
     <section id="comic" class="section container">
@@ -748,11 +751,7 @@
 
           </ul>
         </div>
-      </div>
-
     </section>
-
-    <div class="box"><img src="./img/px-03.webp" alt="" class="parallax"></div>
 
     <!-- Video -->
     <section id="video" class="section container">
@@ -775,8 +774,6 @@
           </div>
         </div>
     </section>
-
-    <div class="box"><img src="./img/px-04.webp" alt="" class="parallax"></div>
 
     <!-- Profile -->
     <section id="profile" class="section container">
@@ -902,10 +899,8 @@
             </li>
 
           </ul>
-        </div>
+          <div>
     </section>
-
-    <div class="box"><img src="./img/px-05.webp" alt="" class="parallax"></div>
 
     <!-- Contact -->
     <section id="contact" class="section container">
@@ -1004,5 +999,5 @@
   <!-- test -->
 
 
-  </body>
+</body>
 </html>
